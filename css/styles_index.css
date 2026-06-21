@@ -1,0 +1,149 @@
+#principal {
+    background-image: url(../assets/img/HOTLINE_BACKGROUND.jpg);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    margin-top: 5%;
+    width: 68%;
+    height: 63%;
+    position: relative;
+}
+
+#contenedor_links {
+    display: flex;
+    width: 20%;
+    margin-top: 2%;
+    justify-content: center;
+    gap: 30%;
+}
+
+#contenedor_links > a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: 'russo_one';
+    font-size: 20px;
+    padding: 7% 20%;
+    border-radius: 10px;
+} 
+
+#intro {
+    width: 100vw;
+    height: 135vh;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#plataformas, #estadisticas {
+    width: 100%;
+    height: 7%;
+    background: var(--rosa);
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+#estadisticas {
+    margin-top: 6.5%;
+    background: linear-gradient(90deg, #020202, #17000e, #bd0172, var(--rosa));
+    box-shadow: var(--sombra_rosa);
+    height: 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-bottom: 10px;
+}
+
+#plataformas > p, #estadisticas > p {
+    margin-left: 3%;
+}
+
+.info {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.primera_pag {
+    width: 28%;
+    background: var(--morado);
+    height: 100%;
+    border-radius: 5px;
+    font-size: 35px;
+    letter-spacing: 7px;
+    font-family: 'hotline_white';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primera_pag > p {
+    margin: 4% 0;
+}
+
+.barra {
+    margin: 0;
+    width: 90%;
+    height: 5px;
+    padding: 1px;
+}
+
+.parrafo {
+    font-size: 16px;
+    font-family: 'russo_one';
+    letter-spacing: 0;
+    padding: 2% 5%; 
+}
+
+.img_primera_pag {
+    margin-top: 5%;
+    width: 90%;
+    height: 78%; /*sixseven*/
+    animation: efecto_mascara 3.5s ease-in-out infinite;
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.img_primera_pag:hover {
+    width: 92%;
+    height: 80%; 
+    transition: 0.5s;
+}
+
+.efecto_mascara {
+    animation: efecto_mascara 5s ease-in-out infinite;
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.efecto_mascara_sutil {
+    animation: efecto_mascara_sutil 5s infinite ease-in-out;
+    transition: width 1s ease, height 1s ease;
+}
+
+.grande{
+    margin: 5px 0 0 0;
+    font-size: 40px;
+}
+
+.pequeno {
+    font-size: 12px;
+    margin: 0;
+}
+
+#intro > .grande {
+    font-size: 90px;
+    text-shadow: none;
+    font-family: 'russo_one';
+    margin: 0 0 2% 0;
+    height: 10%;
+}

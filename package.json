@@ -1,0 +1,28 @@
+{
+  "name": "hotline-miami-2",
+  "version": "1.0.0",
+  "description": "pagina web de hotline miami para la materia front end",
+  "homepage": "https://github.com/Nelsoon056/Hotline-Miami-Promotional-Page#readme",
+  "bugs": {
+    "url": "https://github.com/Nelsoon056/Hotline-Miami-Promotional-Page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nelsoon056/Hotline-Miami-Promotional-Page.git"
+  },
+  "license": "ISC",
+  "author": "nelsoon sandoval",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "start": "",
+    "dev": "nodemon js/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.22.5",
+    "nodemon": "^3.1.14"
+  }
+}

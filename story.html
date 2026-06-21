@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_story.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/50_BLESSINGS_LOGO.ico">
+    <title>Historia</title>
+</head>
+<body> 
+    <header>
+        <div id="titulo">
+            <h1><strong class="rosa">HOTLINE</strong> <strong class="celeste">MIAMI</strong></h1>
+        </div>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html"><p>|  HOME</p></a></li>
+                <li><a href="story.html"><p class="rosa">|  HISTORIA</p></a></li>
+                <li><a href="masks.html"><p>|  MÁSCARAS</p></a></li>
+                <li><a href="about.html"><p>|  EXTRAS</p></a></li>
+            </ul>
+        </nav>
+        <button id="sonido" onclick="fondo(2)"> 
+            <img src="assets/img/mute.png" alt="mute" id="altavoz">
+            <audio src="assets/songs/Knock.ogg" loop id="cancion_2" type="audio/mp3"></audio>
+        </button>
+    </header>
+    <main>
+        <section id="presentacion">
+            <h2 class="grande" id="titulo_pag_2">HISTORIA</h2>
+            <h3 id="subtitulo_pag_2">MIAMI | 1989</h3>
+        </section>
+        <section id="info_pag_2">
+            <article>
+                <div class="subtitulo">
+                    <h3>CAPITULO I</h3>
+                    <h2>PHONECALLS</h2>
+                    <p>Recibes un mensaje cifrado en tu contestadore indicandote que has recibido un paquete, una vez decides abrirlo obtienes una máscara de gallo y una ubicación desconocida, parecería ser una equivocación, pero, en realidad has sido encargado con la tarea de eliminar a todos los rusos en la ubicación dada. Así comienza tu primer trabajo con las llamadas. Con el tiempo sigues cumpliendo con estas misiones y se vuelve parte de tu rutina.</p>
+                </div>
+                <img src="assets/img/STORY_PHONECALLS.png" alt="PHONECALLS" class="efecto_mascara_sutil">
+            </article>
+            <article>
+                <img src="assets/img/STORY_QUESTIONS.jpg" alt="QUESTIONS" class="efecto_mascara_sutil">
+                <div class="subtitulo">
+                    <h3>CAPITULO II</h3>
+                    <h2>QUESTIONS</h2>
+                    <p>Mientras sigues realizando tus misiones empiezas a hacerte preguntas, quién está haciendo las llamadas? Por qué hay otros enmascarados mutilados y torturados en los escondites rusos? Qué tiene que ver la mafia rusa con todo esto? Y no solo eso, constantemente tienes alucinaciones sobre las masacres que realizas y las personas que te rodean, ya no sabes diferenciar lo que es real y lo que esta dentro de tu cabeza, de todas formas sigues cumpliendo con tus misiones hasta que decides rescatar a una chica que estaba apresada y en mal estado dentro de uno de los escondites rusos.</p>
+                </div>
+            </article>
+            <article>
+                <div class="subtitulo">
+                    <h3>CAPITULO III</h3>
+                    <h2>VISITATIONS</h2>
+                    <p>Por un tiempo siguen tus matanzas, ya te has acostumbrado a ello. La chica que rescataste ahora vive contigo y han formado una relación juntos. Pero, no todo es bueno, las alucinaciones se vuelven cada vez más fuertes incluso en tu propia casa, y tus misiones son cada vez más dificiles y riesgosas, constantemente estas teniendo conversaciones con tu subconciente acerca de tus acciones. Y finalmente, una noche luego de llegar de una mision encuentras tu apartamento abierto y a tu novia sin vida tirada en el suelo, mientras un enmascarado te espera en la sala, y sin pensarlo, te dispara, hiriendote de muerte.</p>
+                </div>
+                <img src="assets/img/STORY_VISITATIONS.webp" alt="VISITATIONS" class="efecto_mascara_sutil">
+            </article>
+            <article>
+                <img src="assets/img/STORY_CONNECTIONS.jpg" alt="CONNECTIONS" class="efecto_mascara_sutil">
+                <div class="pixel" id="div_pixel_2" style="display: none;"><button onclick="pixels(1, 2)" id="pixel_2" title="pick"></button></div>
+                <div class="subtitulo" id="div_mover">
+                    <h3>CAPITULO IV</h3>
+                    <h2>CONNECTIONS</h2>
+                    <p>Milagrosamente despiertas en un hospital, todo lo que habías vivido fue una recapitulación de todas tus acciones antes de ese punto, escapas del hospital y llegas a tu departamento, recuperas tu ropa y sales a la estación de policia donde retienen al enmascarado que irrumpio en tu casa, te abres paso y logras sacarle información sobre quien puede estar detras de todo este caos. Tus pistas te terminan llevando al lider de la mafia rusa con quien tienes un enfrentamiento a muerte en el que sales vencedor, acabando asi con su vida y desmantelando casi por completo a la mafia rusa. Tu tarea ya ha terminado y puedes<button onclick="mover(1)">descansar</button>.</p>
+                </div>
+            </article>
+            <article>
+                <div class="subtitulo">
+                    <h3>CAPITULO V</h3>
+                    <h2>ANSWERS</h2>
+                    <p>Ahora seguimos la historia de Biker, quien también forma parte del grupo de enmascarados y deberá resolver distintas incógnitas para descubrir quienes realmente están detrás de las llamadas. Acabando asi con el juego</p>
+                </div>
+                <img src="assets/img/STORY_ANSWERS.webp" alt="ANSWERS" class="efecto_mascara_sutil">
+            </article>
+        </section>
+        <button id="rewind" class="rosa_sombra boton">
+            REWIND
+        </button>
+    </main>
+    <footer>
+        <p>Programed By &nbsp;<a href="https://github.com/Nelsoon056" class="celeste_sombra_texto celeste" target="_blank">Nelsoon Sandoval</a></p> 
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>

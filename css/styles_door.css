@@ -1,0 +1,58 @@
+#contenedor_puerta {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aviso {
+    font-family: 'disco';
+}
+
+.negro {
+    background: #020202;
+}
+
+#puerta_boton img {
+    height: 200px;
+    width: 200px;
+}
+
+#puerta_boton {
+    background: transparent;
+    border: none;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+}
+
+#puerta_boton:hover {
+    cursor: pointer;
+}
+
+#puerta_boton::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    box-shadow: 0 0 20px 20px #ffffff, 0 0 60px 60px #ffea00, 0 0 100px 100px #ff3300;
+    opacity: 0;
+}
+
+.efecto_fuego::before {
+    animation: estallido 0.5s ease-out forwards;
+}
+
+.sacudida_camara {
+    animation: temblor 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+

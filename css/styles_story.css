@@ -1,0 +1,115 @@
+.efecto_mascara_sutil {
+    animation: efecto_mascara_sutil 5s infinite ease-in-out;
+    transition: width 1s ease, height 1s ease;
+}
+
+#presentacion {
+    width: 100%;
+    height: 109vh;
+    background-image: url(../assets/img/HOTLINE_BACKGROUND_CITY.webp);
+    box-sizing: border-box;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#info_pag_2 {
+    height: 300vh;
+    width: 100%;
+    background: var(--morado_oscuro);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#presentacion > .grande {
+    font-size: 150px;
+    color: var(--amarillo);
+    text-shadow: none;
+    font-family: 'russo_one';
+    letter-spacing: 10px;
+    margin: 5px 0 0 0;
+}
+
+#presentacion > h3 {
+    margin: 0 0 15% 0;
+    font-family: 'disco';
+    font-size: 30px;
+}
+
+#info_pag_2 > article {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    width: 50%;
+    height: 80%;
+    transition: 0.5s;
+}
+
+.subtitulo > h2 {
+    font-size: 80px;
+    color: var(--amarillo);
+    text-shadow: none;
+    font-family: 'russo_one';
+    margin: 0;
+}
+
+#info_pag_2 > article > img {
+    width: 45%;
+    height: 80%;
+    margin: 0 6%;
+    box-shadow: var(--sombra_rosa);
+    transition: 1s;
+}
+
+#info_pag_2 > article > img:hover {
+    width: 47%;
+    height: 82%;
+    transition: 1s;
+    margin: 0 5%;
+}
+
+p > button {
+    background: 0;
+    border: none;
+    color: var(--rosa);
+    font-family: 'russo_one';
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: var(--sombra_rosa);
+}
+
+.izquierda {
+    transform: translateX(-5%);
+    transition: 0.5s;
+}
+
+.derecha {
+    transform: translateX(5%);
+    transition: 0.5s;
+}
+
+#titulo_pag_2, #subtitulo_pag_2 {
+    position: relative;
+}
+
+#rewind {
+    box-shadow: var(--sombra_rosa);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    font-family: 'disco';
+    color: var(--blanco);
+    font-size: 30px;
+    cursor: pointer;
+    margin: 2% 0 2% 45%;
+}

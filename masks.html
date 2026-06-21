@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_masks.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/50_BLESSINGS_LOGO.ico">
+    <title>Máscaras</title>
+</head> 
+<body>
+    <header>
+        <div id="titulo">
+            <h1><strong class="rosa">HOTLINE</strong> <strong class="celeste">MIAMI</strong></h1>
+        </div>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html"><p>| HOME</p></a></li>
+                <li><a href="story.html"><p>| HISTORIA</p></a></li>
+                <li><a href="masks.html"><p class="rosa">| MÁSCARAS</p></a></li>
+                <li><a href="about.html"><p>| EXTRAS</p></a></li>
+            </ul>
+        </nav>
+        <button id="sonido" onclick="fondo(3)"> 
+            <img src="assets/img/mute.png" alt="mute" id="altavoz">
+            <audio src="assets/songs/Paris2.ogg" loop id="cancion_3"></audio>
+        </button>
+    </header>
+    <main>
+        <div class="contenedor_carrusel">
+            <section id="carrusel">
+                <button onclick="carrusel(-1)">
+                    <img src="assets/img/Arrow-left.png" alt="anterior">
+                </button>
+                <div id="mascara">
+                    <img src="assets/img/RICHARD.png" alt="" id="img_carrusel" class="img_primera_pag">
+                </div>
+                <button onclick="carrusel(1)">
+                    <img src="assets/img/Arrow-right.png" alt="siguiente">
+                </button>
+            </section>
+            <section id="descripcion">
+                <div class="pixel" id="div_pixel_3" style="display: none;"><button onclick="pixels(1, 3)" id="pixel_3" title="pick"></button></div>
+                <h4 id="mascara_nom">RICHARD</h4>
+                <p id="mascara_des">Sin efecto adicional. La máscara por defecto y un<button onclick="mover(2)">símbolo</button>del juego.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Programed By &nbsp;<a href="https://github.com/Nelsoon056" class="celeste_sombra_texto celeste" target="_blank">Nelsoon Sandoval</a></p> 
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>

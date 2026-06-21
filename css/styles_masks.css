@@ -1,0 +1,118 @@
+#mascara {
+    height: 70vh;
+    width: 40%;
+    margin: 12vh 0 8vh 0;
+    background: var(--morado);
+    border-radius: 10px;
+    box-shadow: var(--sombra_rosa);
+    transition: 1s;
+}
+
+#descripcion > p > button {
+    font-size: 18px;
+}
+
+#carrusel > button {
+    background: transparent;
+    height: 200px;
+    width: 200px;
+    border: none;
+    box-sizing: border-box;
+    margin: 0 7%
+}
+
+#carrusel > button > img {
+    height: 100%;
+    width: 100%;
+}
+
+#carrusel > button > img:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#carrusel {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0 0 0;
+}
+
+#img_carrusel {
+    height: 100%;
+    width: 90%;
+    margin: 6% 0 0 5%;
+    transition: 0.5s ;
+}
+
+.img_primera_pag {
+    margin-top: 5%;
+    width: 90%;
+    height: 78%; /*sixseven*/
+    animation: efecto_mascara 3.5s ease-in-out infinite;
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+#img_carrusel:hover {
+    height: 102%;
+    width: 92%;
+    transition: 0.5s;
+    margin: 2% 0 0 1%;
+}
+
+.contenedor_carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#descripcion {
+    display: flex;
+    width: 60%;
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+h4 {
+    font-family: 'hotline_white';
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 2% 0 0 0;
+    color: var(--amarillo);
+    transition: 1s;
+}
+
+#mascara_des {
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+    transition: 1s;
+}
+
+.subir {
+    transform: translateY(-2.5%);
+    transition: 1s;
+}
+
+.bajar {
+    transform: translateY(20%);
+    transition: 1s;
+}
+
+p > button {
+    background: 0;
+    border: none;
+    color: var(--rosa);
+    font-family: 'russo_one';
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: var(--sombra_rosa);
+}
+

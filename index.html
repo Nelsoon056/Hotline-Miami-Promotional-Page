@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles_index.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/50_BLESSINGS_LOGO.ico">
+    <title>Hotline Miami</title>
 </head>
-<body>
-    Hola
+<body> 
+    <header>
+        <div id="titulo">
+            <h1><strong class="rosa">HOTLINE</strong> <strong class="celeste">MIAMI</strong></h1>
+        </div>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html"><p class="rosa">| HOME</p></a></li>
+                <li><a href="story.html"><p>| HISTORIA</p></a></li>
+                <li><a href="masks.html"><p>| MÁSCARAS</p></a></li>
+                <li><a href="about.html"><p>| EXTRAS</p></a></li>
+            </ul>
+        </nav>
+        <button id="sonido" onclick="fondo(1)"> 
+            <img src="assets/img/mute.png" alt="mute" id="altavoz">
+            <audio src="assets/songs/Hotline.ogg" loop id="cancion_1"></audio>
+        </button>
+    </header>
+    <main>
+        <section id="principal">
+            <img src="assets/img/HOTLINE_MIAMI_LOGO.png" alt="logo" id="logo">
+            <h2>DO YOU LIKE HURTING OTHER PEOPLE?</h2>
+            <div id="contenedor_links">
+                <a href="story.html" class="rosa_sombra boton">HISTORIA</a>
+                <a href="masks.html" class="celeste_sombra boton">MÁSCARAS</a>
+            </div>
+        </section>
+        <section id="intro">
+            <div id="plataformas">
+                <p>DISPONIBLE EN PC | PS3 | PS VITA | PS4</p>
+            </div>
+            <h3>INTRODUCCIÓN AL</h3>
+            <h2 class="grande">GAMEPLAY</h2>
+            <div class="info">
+                <article class="primera_pag">
+                    <p class="rosa rosa_sombra_texto">VIOLENCIA</p>
+                    <div class="barra rosa_sombra"></div>
+                    <p class="parrafo">Sumergete en un limbo de muerte continua con uno de los gameplays más frenéticos, masacra a tus enemigos la <strong class="amarillo">mafia rusa</strong> dirigiendote hacia sus bases de operaciones esparcidas a lo largo de miami, con una gran variedad de armas cuerpo a cuerpo y de fuego para acabar con todos ellos</p>
+                    <img src="assets/img/DEAD_RUSSIAN.png" alt="Ruso Muerto" class="img_primera_pag">
+                </article>
+                <article class="primera_pag">
+                    <p class="celeste celeste_sombra_texto">MASCARAS</p>
+                    <div class="barra celeste_sombra"></div>
+                    <p class="parrafo">Durante tus misiones al llegar a las ubicaciones donde te esperan los rusos, tendrás que escoger 1 de 26 <Strong class="amarillo">máscaras</Strong> que afectarán al gameplay, hay una gran variedad de las mismas y todas se adaptan a las distintas formas de jugar de los jugadores</p>
+                    <img src="assets/img/RICHARD.png" alt="mascara" class="img_primera_pag">
+                </article>
+                <article class="primera_pag">
+                    <p class="amarillo amarillo_sombra_texto">SOUNDTRACK</p>
+                    <div class="barra amarillo_sombra"></div>
+                    <p class="parrafo">Una banda sonora legendaria que sirve como ambientación perfecta para la época en la que transcurre el juego y la temática que este mismo tiene, haciendo un gran uso del género de la <strong class="amarillo">electrónica</strong> y <strong class="amarillo">synthwave</strong> para dar una sensación de frenetismo durante el gameplay </p>
+                    <img src="assets/img/50_BLESSINGS_LOGO.png" alt="50 bendiciones" class="img_primera_pag">
+                </article>
+            </div>
+            <div id="estadisticas">
+                <div><p class="grande">| +3M <br></p> <p class="pequeno">Copias Vendidas</p></div>
+                <div><p class="grande">| 22 <br></p> <p class="pequeno">Niveles Únicos</p></div>
+                <div><p class="grande">| 26 <br></p> <p class="pequeno">Máscaras</p></div>
+                <div><p class="grande">| +30 <br></p> <p class="pequeno">Armas</p></div>
+                <div><p class="grande">| 2012 <br></p> <p class="pequeno">Año de Salida</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Programed By &nbsp;<a href="https://github.com/Nelsoon056" class="celeste_sombra_texto celeste" target="_blank">Nelsoon Sandoval</a></p> 
+        <div class="pixel"><button onclick="pixels(1, 1)" id="pixel_1" title="pick"></button></div>
+        <script src="js/main.js"></script>
+    </footer>
 </body>
 </html>

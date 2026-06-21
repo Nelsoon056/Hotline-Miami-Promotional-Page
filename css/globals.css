@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'hotline_white';
+    src: url('../assets/fonts/WIDEAWAKE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'russo_one';
+    src: url('../assets/fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unica_one';
+    src: url('../assets/fonts/UnicaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'disco';
+    src: url('../assets/fonts/discoduckhalfital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --morado: #1B0D30;
+    --morado_oscuro: #11081E ;
+    --celeste: #00EEFF;
+    --rosa: #FF0099;
+    --amarillo: #FFDD00 ; 
+    --blanco: #F2F2F2;
+    --sombra_rosa: 
+    0 0 5px #fff3,
+    0 0 10px var(--rosa),
+    0 0 20px var(--rosa),
+    0 0 40px var(--rosa);
+    --sombra_celeste: 
+    0 0 5px #fff3,
+    0 0 10px var(--celeste),
+    0 0 20px var(--celeste),
+    0 0 40px var(--celeste);
+    --sombra_blanco: 
+    0 0 5px #fff3,
+    0 0 10px #fff,
+    0 0 20px var(--blanco),
+    0 0 40px var(--blanco);
+    --sombra_amarillo: 
+    0 0 5px #fff3,
+    0 0 10px var(--amarillo),
+    0 0 20px var(--amarillo),
+    0 0 40px var(--amarillo);
+}
+
+/*GENERAL*/
+
+html {
+    scrollbar-gutter: stable;
+}
+
+h1{
+    font-family: 'russo_one';
+    text-shadow: 
+    1px 1px 0 #F2F2F2,
+    2px 2px 0 var(--blanco);
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+h2 {
+    font-family: 'disco';
+    color: var(--blanco);
+    font-weight: 100;
+    /* text-shadow: var(--sombra_blanco); */
+    font-size: 25px;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'unica_one';
+    color: var(--celeste);
+    font-weight: 100;
+    text-shadow: var(--sombra_celeste);
+    font-size: 25px;
+    margin: 2% 0 0 0;
+    letter-spacing: 7px;
+}
+
+.rosa {
+    color: var(--rosa);
+}
+
+.rosa_sombra {
+    box-shadow: var(--sombra_rosa);
+    background: var(--rosa);
+}
+
+.rosa_sombra_texto {
+    text-shadow: var(--sombra_rosa);
+}
+
+.rosa_sombra:hover {
+    background: #ff6ac3;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.celeste_sombra {
+    box-shadow: var(--sombra_celeste);
+    background: var(--celeste);
+}
+
+.celeste_sombra:hover {
+    background: #60f4ff;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.celeste {
+    color: var(--celeste);
+}
+
+.celeste_sombra_texto {
+    text-shadow: var(--sombra_celeste);
+}
+.amarillo {
+    color: var(--amarillo);
+}
+
+.amarillo_sombra_texto {
+    text-shadow: var(--sombra_amarillo);
+}
+
+.amarillo_sombra {
+    box-shadow: var(--sombra_amarillo);
+    background: var(--amarillo);
+}
+
+body {
+    margin: 0;
+    background: var(--morado_oscuro);
+    overflow-x: hidden;
+    font-family: 'russo_one';
+    color: var(--blanco);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    z-index: 30;
+}
+
+::-webkit-scrollbar-track {
+    background: #020202;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rosa);
+    border-radius: 6px;
+    border: 3px solid #020202;
+}
+
+header {
+    display: flex;
+    max-height: 10vh;
+    box-sizing: border-box;
+    background: linear-gradient(#000e, #0000);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#nav_bar {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    margin: 0;
+    justify-content: end;
+}
+
+#sonido {
+    background: transparent;
+    border: none;
+    margin: 2.5% 4% 0 0;
+}
+
+#sonido > img {
+    height: 32px;
+    width: 32px;
+}
+
+#sonido > img:hover {
+    cursor: pointer;
+}
+
+#nav_bar > ul {
+    margin-top: 2%;
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: end;
+    list-style: none;
+}
+
+ul > li, li > a {
+    font-size: 25px;
+    margin: 0 3% 0 0;
+    font-family: 'russo_one';
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+li > a :hover {
+    color: var(--rosa);
+    transition: 0.5s;
+}
+
+footer {
+    margin-top: 0.5%;
+    height: 10vh;
+    width: 100vw;
+    background: var(--morado);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    background-color: var(--morado);
+}
+
+.pixel {
+    margin: 0;
+}
+
+.pixel > button {
+    width: 10px;
+    height: 10px;
+    border: 3.0px solid #501a3b;
+    background: var(--rosa);
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+}
+
+.pixel > button:hover {
+    background: #ff54bb;
+    box-shadow: var(--sombra_rosa);
+    border: 3.0px solid #902f6b;
+    cursor: pointer;
+}
+
+#titulo {
+    height: 100%;
+    width: 27%;
+    margin-left: 3%;
+}
+
+.beat {
+    animation: beat 1s infinite ease-out;
+}
+
+/*ANIMACIONES*/
+
+@keyframes efecto_mascara {
+    0% {
+        transform: rotate(-2.5deg) translateX(-4px) translateY(0);
+    }
+    50% {
+        transform: rotate(2.5deg) translateX(4px) translateY(-3px);
+    } 
+    100% {
+        transform: rotate(-2.5deg) translateX(-4px) translateY(0);
+    }
+}
+
+@keyframes efecto_mascara_sutil {
+    0% {
+        transform: rotate(-1deg) translateX(-2px) translateY(0);
+    }
+    50% {
+        transform: rotate(1deg) translateX(2px) translateY(-1.5px);
+    } 
+    100% {
+        transform: rotate(-1deg) translateX(-2px) translateY(0);
+    }
+}
+
+@keyframes beat {
+    0% {transform: scale(1.15);}
+    50% {transform: scale(1.07);}
+    100% {transform: scale(1);}
+}
+
+@keyframes temblor {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-14px, 12px) rotate(-4deg); }
+    40% { transform: translate(12px, -14px) rotate(4deg); }
+    60% { transform: translate(-12px, 10px) rotate(-2deg); }
+    80% { transform: translate(10px, -8px) rotate(2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes estallido {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+    20% { transform: translate(-50%, -50%) scale(15); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(20); opacity: 0; }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles_about.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/50_BLESSINGS_LOGO.ico">
+    <title>About</title>
+</head>
+<body> 
+    <header>
+        <div id="titulo">
+            <h1><strong class="rosa">HOTLINE</strong> <strong class="celeste">MIAMI</strong></h1>
+        </div>
+        <nav id="nav_bar">
+            <ul>
+                <li><a href="index.html"><p>| HOME</p></a></li>
+                <li><a href="story.html"><p>| HISTORIA</p></a></li>
+                <li><a href="masks.html"><p>| MÁSCARAS</p></a></li>
+                <li><a href="about.html"><p class="rosa">| EXTRAS</p></a></li>
+            </ul>
+        </nav>
+        <button id="sonido" onclick="fondo(4)"> 
+            <img src="assets/img/mute.png" alt="mute" id="altavoz">
+            <audio src="assets/songs/InnerAnimal.ogg" loop id="cancion_4"></audio>
+        </button>
+    </header>
+    <main>
+        <section id="final">
+            <h2 id="final_h2">EXTRAS</h2>
+            <h3 id="final_h3">COMUNIDAD Y SECRETOS</h3>
+        </section>
+        <section id="info_pag_4">
+            <article id="secretos">
+                <h3 id="subtitulo_1">EASTER EGGS</h3>
+                <p class="parrafo">Conoce algunos secretos del juego y easter eggs de la página</p>
+                <div id="contenedor_acordeon">
+                    
+                    <div class="item_acordeon">
+                        <button class="boton_acordeon">PIXELES</button>
+                        <div class="contenido_acordeon">
+                            <p>En las 4 páginas estan regados 4 <button onclick="mostrar()">pixeles morados</button>, encuentralos todos para desbloquear contenido bonus. Pixeles restantes: 4</p>
+                            <div class="pixel" id="div_pixel_4"><button onclick="pixels(1, 4)" id="pixel_4" title="pick"></button></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item_acordeon">
+                        <button class="boton_acordeon">PUERTAS</button>
+                        <div class="contenido_acordeon">
+                            <p>Cuidado con las <a href="door.html">Puertas</a>.</p>
+                        </div>
+                    </div>
+                
+                    <div class="item_acordeon">
+                        <button class="boton_acordeon">???</button>
+                        <div class="contenido_acordeon">
+                            <p><a href="music.html" id="link_bloqueado" class="link_desactivado">Bloqueado</a></p>
+                        </div>
+                    </div>
+                
+                </div>
+            </article>
+            <article id="contenedor_formulario">
+                <h3 id="subtitulo_2">ENVIANOS TU OPINION</h3>
+                <p class="parrafo">Si ya jugaste a este gran juego, nos encantaría saber tus opiniones acerca del mismo, puedes hacerlo con el siguiente formulario. También puedes ver las opiniones de los demás jugadores si aún no lo has probado.</p>
+                <form id="formulario">
+                    <label for="nombre">Nombre Y Apellido</label>
+                    <input type="text" placeholder="Nombre Y Apellido" id="nombre">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" placeholder="Example@gmail.com" id="email">
+                    <label for="genero">Género</label>
+                    <select name="" id="genero">
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                    </select>
+                    <label for="opinion">Opinión</label>
+                    <input type="text" placeholder="Opinón..." id="opinion">
+                </form>
+                <button class="rosa_sombra boton" id="boton_form">
+                        SUBIR
+                </button>
+            </article>
+            <article id="contenedor_opiniones">
+                <h3 id="subtitulo_3">OPINIONES DE LA COMUNIDAD</h3>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Programed By &nbsp;<a href="https://github.com/Nelsoon056" class="celeste_sombra_texto celeste" target="_blank">Nelsoon Sandoval</a></p> 
+        <script src="js/main.js"></script>
+    </footer>
+</body>
+</html>
