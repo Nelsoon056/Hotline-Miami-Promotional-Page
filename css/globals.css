@@ -313,3 +313,313 @@ footer {
     20% { transform: translate(-50%, -50%) scale(15); opacity: 1; }
     100% { transform: translate(-50%, -50%) scale(20); opacity: 0; }
 }
+
+/*RESPONSIVE*/
+
+@media (max-width: 1100px)  {
+    ul > li, li > a {
+    font-size: 16px;
+    margin: 0 3% 0 0;
+    font-family: 'russo_one';
+    text-decoration: none;
+    color: var(--blanco);
+}
+}
+
+@media screen and (max-width: 768px) {
+    ul > li, li > a {
+        font-size: 13px;
+        margin: 0 5px 0 0;
+    }
+
+    #sonido {
+    background: transparent;
+    border: none;
+    margin: 0 1% 1.3% 0 ;
+    padding-top: 0;
+    }
+
+    #sonido > img {
+    height: 25px;
+    width: 25px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 13% 0 0 0;
+    }
+
+    #nav_bar > ul {
+    margin: 1% 0 0 0;
+    display: flex;
+    width: 98%;
+    height: 100%;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+    }
+    
+    body {
+        width: 100dvw;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100dvw;
+    }
+
+    #final > h2 {
+        font-size: 60px; 
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    #final > h3 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 5% 15% 5%;
+    }
+
+    #subtitulo_1, #subtitulo_2, #subtitulo_3 {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .parrafo {
+        width: 90%;
+    }
+
+    #contenedor_acordeon {
+        width: 95%;
+    }
+
+    #formulario {
+        width: 85%; 
+        padding: 20px 15px; 
+    }
+
+    input, select {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    /*Index*/
+
+    #logo {
+        width: 90%;
+        height: auto;
+        margin-top: 15%;
+    }
+
+    #principal > h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #contenedor_links {
+        width: 80%; 
+        gap: 20px;
+        margin-top: 10%;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #contenedor_links > a {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #intro {
+        height: auto; 
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+    #plataformas {
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #intro > h3 {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    #intro > .grande {
+        font-size: 45px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .primera_pag {
+        width: 90%; 
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .img_primera_pag {
+        height: auto;
+    }
+
+    #estadisticas {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+        margin-top: 15%;
+    }
+
+    #estadisticas > div {
+        width: 40%;
+        text-align: center;
+    }
+
+    /*STORY*/
+
+    #presentacion {
+        height: 100vh; 
+        background-size: cover; 
+        background-position: center;
+        padding-top: 15%; 
+    }
+
+    #presentacion > .grande {
+        font-size: 55px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    #presentacion > h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-bottom: 200px;
+    }
+
+    #info_pag_2 {
+        height: auto; 
+        padding: 40px 0;
+        gap: 60px; 
+    }
+
+    #info_pag_2 > article {
+        height: auto;
+        width: 100%;
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    #info_pag_2 > article:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .subtitulo {
+        width: 90%;
+        height: auto;
+        text-align: center; 
+    }
+
+    .subtitulo > h2 {
+        font-size: 45px; 
+    }
+
+    
+    #info_pag_2 > article > img {
+        width: 90%;
+        height: auto; 
+        margin: 0; 
+    }
+
+    #info_pag_2 > article > img:hover {
+        width: 95%; 
+        margin: 0;
+    }
+
+    
+    #rewind {
+        margin: 40px auto 20px auto;
+        display: block; 
+        width: 80%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /*mascaras*/
+
+    .contenedor_carrusel {
+        height: auto;
+        min-height: 70vh;
+        justify-content: center;
+        padding-top: 25%; 
+        padding-bottom: 30px;
+    }
+
+    #carrusel {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    #carrusel > button {
+        height: 60px;
+        width: 60px;
+        margin: 0 2%;
+    }
+
+    #mascara {
+        height: 45vh;
+        width: 65%; 
+        margin: 0;
+    }
+
+    #descripcion {
+        width: 90%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    h4 {
+        font-size: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #mascara_des {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* puerta */
+
+    #contenedor_puerta {
+        height: 100dvh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #puerta_boton, 
+    #puerta_boton img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #aviso {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 30px;
+        letter-spacing: 2px;
+    }
+}

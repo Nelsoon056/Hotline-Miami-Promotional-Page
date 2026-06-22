@@ -8,7 +8,8 @@
     height: 109vh;
     background-image: url(../assets/img/HOTLINE_BACKGROUND_CITY.webp);
     box-sizing: border-box;
-    background-size: contain;
+    background-size: cover; 
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;

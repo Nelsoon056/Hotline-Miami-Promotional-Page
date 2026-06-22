@@ -6,6 +6,7 @@ main {
     height: 109vh;
     width: 100%;
     background-image: url(../assets/img/BACKGROUND_SUNSET.png);
+    background-position: center;
     background-repeat: none;
     background-size:cover;
     display: flex;
@@ -16,7 +17,7 @@ main {
 
 #final > h2 {
     font-size: 150px;
-    font-family: 'russo_one';
+    font-family: 'russo_one'; 
     text-shadow: var(--sombra_celeste);
     color: var(--celeste);
     letter-spacing: 15px;
@@ -218,10 +219,10 @@ p > a {
 
 .link_desactivado {
     color: gray;
-    /* pointer-events: none; */
+    pointer-events: none;
     text-decoration: none;
     opacity: 0.5;
-    /* cursor: not-allowed; */
+    cursor: not-allowed;
 }
 
 .link_desactivado.desbloqueado {

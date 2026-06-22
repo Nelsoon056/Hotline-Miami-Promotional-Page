@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "start": "",
+    "start": "node js/server.js",
     "dev": "nodemon js/server.js"
   },
   "dependencies": {
